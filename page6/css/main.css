@@ -1,0 +1,426 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Courier New, monospace;
+	height: 100%;
+}
+
+header {
+	position: fixed;
+	background: white;
+	width: 100%;
+	box-shadow: 0 0 10px 3px #CECECE;
+}
+
+.menu {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 200px;
+   margin-right: 200px;
+}
+
+.mn {
+	height: 50px;
+}
+
+.for__teachers {
+	padding: 70px 200px 70px 200px;
+}
+
+footer {
+	padding: 30px 200px 30px 200px;
+	background: linear-gradient(263.21deg, #71A5F6 0%, #E779C9 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.picture__logo {
+	box-shadow: 2px 2px 100px 5px #FFFFFF;
+	border-radius: 40px;
+	background-color: #FFFFFF;
+	margin-right: 40px;
+	float: left;
+	margin-top: 45px;
+}
+
+.navbar2 {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.navbar2 a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navbar2 a:hover {
+  color: #FFFFFF;
+}
+
+.menu__link2 {
+	font-size: 20px;
+  	font-weight: 200;
+  	margin-bottom: 5px;
+}
+
+.a__u {
+	margin-bottom: 0;
+}
+
+.menu__link2:hover {
+	text-decoration: underline;
+	text-decoration-color: #FFFFFF;
+}
+
+.block {
+  	position: fixed;
+  	bottom: 60px;
+  	right: 70px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+}
+
+.navbar li{
+  width: 140px;
+  list-style: none;
+  position: relative;
+  background: white;
+}
+
+.navbar ul li {
+	width: 220px;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  transition: all .5s;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.navbar a:hover {
+  background: #E779C9;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  padding: 0;
+}
+
+.navbar li:hover > ul {
+  display: block;
+}
+
+.main__part {
+	background: url(https://kartinkin.net/uploads/posts/2021-07/thumbs/1626745797_37-kartinkin-com-p-svetlii-fon-biznes-krasivo-37.png);
+	/*background: url(https://static.tildacdn.com/tild3531-3164-4561-b034-303335346463/pattern_school_sketc.png);*/
+	/*background: url(https://img.freepik.com/premium-vector/education-and-school-outline-seamless-pattern_104589-278.jpg);*/
+	background-size: cover;
+	padding: 135px 200px 35px 200px;
+}
+
+.navigation {
+	padding: 11px 20px 11px 20px;
+	background-color: white;
+	border-radius: 14px;
+	display: inline-block;
+	margin-bottom: 35px;
+	border: solid 1px #CECECE;
+}
+
+.link {
+	color: black;
+	text-decoration: none;
+}
+
+.link:hover {
+	color: #3d6ced;
+	text-decoration: underline;
+}
+
+.personal__info {
+	padding: 50px 90px 35px 90px;
+	border-radius: 20px;
+	background-color: white;
+	border: solid 1px #CECECE;
+}
+
+.photo__text {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.photo {
+	width: 100px;
+	height: 100px;
+	border-radius: 65px;
+	background-image: url(https://lidanews.by/upload/iblock/a73/a73764a983c85088dfd6d461629c05c8.jpg);
+	background-size: cover;
+	box-shadow: 0px 0px 13px 4px #E779C9;
+	margin-right: 40px;
+}
+
+.fio {
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+.subject {
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+
+.mail {
+	font-size: 16px;
+} 
+
+.btn2 {
+	padding: 6px 12px;
+	margin-right: 10px;
+  border: none;
+	background: #E779C9;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.btn3 {
+	padding: 6px 12px;
+	margin-right: 10px;
+  border: none;
+	background: #839FEF;
+	margin-bottom: 15px;
+	color: white;
+}
+
+.btn2:hover {
+  color: #E779C9;
+  background: white;
+  border: solid 1px #E779C9;
+}
+
+.btn3:hover {
+	color: #839FEF;
+  background: white;
+  border: solid 1px #839FEF;
+
+}
+
+#pp, #pp2, #pp3, #pp4, #pp5, #pp6 {
+  display: none;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  width: 320px;
+}
+
+#pp.open, #pp2.open, #pp3.open, #pp4.open, #pp5.open, #pp6.open {
+  display: block;
+  width: 320px;
+}
+
+#pp form, #pp2 form, #pp3 form, #pp4 form, #pp5 form, #pp6 form {
+  background: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 320px;
+}
+
+.popup, .popup2, .popup3, .popup4, .popup5, .popup6 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(17, 17, 17, 0.7);
+  transition: all 0.5s ease;
+  display: none;
+}
+
+.popup_open {
+  display: block;
+}
+
+.popup__container,
+.popup__container2,
+.popup__container3,
+.popup__container4,
+.popup__container5,
+.popup__container6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.popup__wrapper {
+  padding: 40px;
+  background-color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.input {
+	margin-bottom: 15px;
+	width: 100%;
+  height: 30px;
+  padding-left: 12px;
+}
+
+.btn1, .btn4 {
+	width: 100%;
+	height: 45px;
+	font-size: 16px;
+	background-color: #E779C9;
+	border: none;
+	color: white;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+.btn1:hover, .btn4:hover{
+	color: #E779C9;
+	border: solid 2px #E779C9;
+	background-color: white;
+	font-weight: 600;
+}
+
+.btn4 {
+	background-color: #839FEF;
+}
+
+.btn4:hover {
+	color: #839FEF;
+	border: solid 2px #839FEF;
+}
+
+.select__subjects {
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	padding-left: 9px;
+	margin-bottom: 15px;
+}
+
+.text, .text2 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 600;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  color: #e329b1;
+}
+
+.text2 {
+	color: #3d6ced;
+}
+
+tbody tr:hover {
+	background: #DCDCDC;
+}
+
+
+.ic {
+	margin-right: 6px;
+}
+
+.actions {
+	text-align: center;
+}
+
+.icons {
+	cursor: pointer;
+}
+
+.confirm {
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px grey;
+	margin-bottom: 15px;
+}
+
+.sure {
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: solid 1px grey;
+	margin-bottom: 20px;
+}
+
+.btns {
+	float: right;
+}
+
+.btn__delete, .btn__change, .btn__exit {
+	padding: 4px 10px;
+	margin-bottom: 20px;
+	border: none;
+	color: white;
+}
+
+.btn__delete, .btn__change {
+	margin-right: 6px;
+	background: #b371d1;
+}
+
+.btn__delete:hover, .btn__change:hover {
+	background: #9c2ad1;
+}
+
+.btn__exit {
+	background: #979199;
+}
+
+.btn__exit:hover {
+	background: #656266;
+}
+
+#teachersdiv, #subjectsdiv {
+	display: none;
+}
+
+.sel5 {
+	margin-bottom: 30px;
+}
+
+.btns5 {
+	margin-bottom: 10px;
+}
+
+.btns6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.redRow {
+    background: red;
+    color: white;
+}
